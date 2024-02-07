@@ -288,7 +288,6 @@ def api_monitoring():
                 latest_monitoring_json_tuple = get_local_monitoring_data(monitoring_data_filepath)
 
             latest_monitoring_json = latest_monitoring_json_tuple[0]
-
             app.logger.info(latest_monitoring_json.keys())     
 
             #Convert filename timestamp format "%Y%m%dT%H%M%SZ" to "%m/%d/%Y, %H:%M:%S"
